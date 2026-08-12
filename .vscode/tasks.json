@@ -4,18 +4,16 @@
         {
             "label": "Build and Run Java",
             "type": "shell",
-            "command": "bash",
+            "command": "cmd.exe",
             "args": [
-                "-c",
-                "mkdir -p ${workspaceFolder}/bin && javac -d ${workspaceFolder}/bin ${file} && java -cp ${workspaceFolder}/bin ${fileBasenameNoExtension}"
+                "/c",
+                "javac -d \"C:\\Users\\naman\\Desktop\\JAVA_PROJECTS\\bin\" \"${file}\" && java -cp \"C:\\Users\\naman\\Desktop\\JAVA_PROJECTS\\bin\" \"${fileBasenameNoExtension}\""
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [
-                "$javac"
-            ]
+            "problemMatcher": []
         }
     ]
 }

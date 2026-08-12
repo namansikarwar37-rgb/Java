@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class userInput{
-    public static void main(String[] args){
+public class userInput {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -20,8 +20,13 @@ public class userInput{
         System.out.println("hello " + name);
         System.out.println("your age is " + age);
         System.out.println("your GPA is " + GPA);
-        System.out.println("Student : " + isStudent);
-        scanner.close();
 
+        if (isStudent) {
+            System.out.println("you are enrolled as student");
+        } else {
+            System.out.println("you are not enrolled as a student");
+        }
+
+        scanner.close();
     }
 }
