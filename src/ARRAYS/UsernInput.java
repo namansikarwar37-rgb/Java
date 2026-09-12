@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class UsernInputInArray {
+public class UsernInput {
     public static void main(String[] args) {
-        
+
     }
 }
